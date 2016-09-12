@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Japenese Study</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500,600,700" rel="stylesheet">
+
+    <link media="all" type="text/css" rel="stylesheet" href="style.css" >
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="gameType">
+
+            <h2>Japanese Practice</h2>
+
+            <h3>Choose a game type to begin!</h3>
+
+            <button id="standard">Standard</button>
+
+            <button id="diacritical">Standard + Diacritical</button>
+
+            <button id="all">Include All Letters!</button>
+
+            <br>
+
+            <p id="gameRules">
+                <b>Standard:</b> Main Hiragana/Katakana characters. <br>
+                <b>Standard + Diacritical:</b> Includes markings. <br>
+                <b>Include All Letters:</b> All above, plus the sounding characters as well.
+            </p>
+        </div>
+
+        <div id="game" class="hide">
+
+            <p id="gameTitle">
+                <b>Japanese Practice:</b><br><span id="gameTypePlaying"></span><br>
+            </p>
+
+            <div id="letterHold">
+                <h5 id="letter">.</h5>
+            </div>
+
+            <br>
+
+            <button id="newLetter">New Letter</button>
+
+            <p id="gameComplete" class="hide">
+                Game Complete!
+            </p>
+
+            <button id="restart" class="restart">Restart</button>
+
+            <br>
+
+        </div>
+
+    </div>
+
+    <!--jQuery-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
